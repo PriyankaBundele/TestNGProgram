@@ -13,10 +13,11 @@ public class SignupObjectTest {
 	private By Lastname = By.xpath("//input[@name='UserLastName']");
 	private By JObTitles = By.xpath("//input[@name='UserTitle']");
 	private By Enteremail = By.xpath("//input[@name='UserEmail']");
-	private By PhoneTry =  By.xpath("//input[@name='UserPhone']");
+	private By PhoneTry = By.xpath("//input[@name='UserPhone']");
 	private By employeeCode = By.xpath("//select[@name='CompanyEmployees']");
 	private By CompanySheet = By.xpath("//input[@name='CompanyName']");
-	private By Checkbox =By.xpath("//div[@class='checkbox-ui']");
+	private By Checkbox = By.xpath("//div[@class='checkbox-ui']");
+
 	public SignupObjectTest(WebDriver driver2) {
 		this.driver = driver2;
 	}
@@ -62,11 +63,11 @@ public class SignupObjectTest {
 		return driver.findElement(CompanySheet);
 
 	}
+
 	public WebElement checkselection() {
 
 		return driver.findElement(Checkbox);
 
 	}
-
 
 }
